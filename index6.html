@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="row my-5">
+        <div class="col-md-12">
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">
+                Add Person
+            </button>
+            <div class="modal fade" id="myModal">
+                <div class="modal-dialog modal-md modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4>Add Person</h4>
+                            <span data-dismiss="modal" class="close">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <div class="sdf">
+                                <label style="text-align: right; width: 100px;" for="1inp">First name</label>
+                                <input type="text" id="1inp" style="width: 350px;" placeholder="First name">
+                            </div>
+                            <div class="sdf">
+                                <label style="text-align: right; width: 100px;" for="2inp">Last name</label>
+                                <input type="text" id="2inp" style="width: 350px;" placeholder="Last name">
+                            </div>
+                            <div class="sdf">
+                                <label style="text-align: right; width: 100px;" for="3inp">Gender</label>
+                                <select name="3inp" id="3inp" style="width: 350px;">
+                                    <option value="1">Male</option>
+                                    <option value="2">Female</option>
+                                </select>
+                            </div>
+                            <div class="sdf">
+                                <label style="text-align: right; width: 100px;" for="4inp">Address</label>
+                                <textarea name="4inp" id="4inp" cols="30" rows="10" style="width: 350px;" placeholder="Address"></textarea>
+                            </div>
+                            <div class="sdf">
+                                <label style="text-align: right; width: 100px;" for="5inp">Date of birth</label>
+                                <input type="date" id="5inp" style="width: 350px;">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jQuery.min.js"></script>
+<script src="js/src/popover.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
